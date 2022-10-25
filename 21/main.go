@@ -10,7 +10,7 @@ func main() {
 	client.InsertLightningConnectorIntoComputer(mac)
 
 	windowsMachine := &adapter.Windows{}
-	windowsMachineAdapter := &WindowsAdapter{
+	windowsMachineAdapter := &adapter.WindowsAdapter{
 		windowMachine: windowsMachine,
 	}
 
