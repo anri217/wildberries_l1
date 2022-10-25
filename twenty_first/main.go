@@ -1,16 +1,14 @@
 package main
 
-import "adapter"
-
 func main() {
 
-	client := &adapter.Client{}
-	mac := &adapter.Mac{}
+	client := &Client{}
+	mac := &Mac{}
 
 	client.InsertLightningConnectorIntoComputer(mac)
 
-	windowsMachine := &adapter.Windows{}
-	windowsMachineAdapter := &adapter.WindowsAdapter{
+	windowsMachine := &Windows{}
+	windowsMachineAdapter := &WindowsAdapter{
 		windowMachine: windowsMachine,
 	}
 
